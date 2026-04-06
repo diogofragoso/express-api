@@ -1,0 +1,15 @@
+src/
+ ├── config/         # Configurações de logs (Winston) e segurança
+ ├── controllers/    # Lógica das rotas
+ ├── middlewares/    # Auth (JWT), Rate Limit, Erros
+ ├── schemas/        # Validações Zod
+ ├── services/       # Regras de negócio e chamadas ao Prisma
+ ├── server.ts       # Ponto de entrada
+
+
+
+
+
+
+#Arquivo .env
+DATABASE_URL="postgresql://root:rootpassword@192.168.0.126:5432/bd?schema=public"

@@ -1,0 +1,43 @@
+node_modules
+
+/src/generated/prisma
+# Dependências (Nunca suba a node_modules)
+node_modules/
+jspm_packages/
+
+# Configurações sensíveis (Contém sua senha do Banco e API Keys)
+.env
+.env.test
+.env.local
+.env.production
+
+# Logs (Dados locais de erro e monitoramento)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compilação e Build
+dist/
+build/
+out/
+.next/
+
+# Prisma (Opcional: oculte o SQLite se usar, mas mantenha o schema)
+# Se você usar SQLite localmente, descomente a linha abaixo:
+# *.db
+
+# Pasta gerada pelo Prisma (Já que corrigimos para o padrão node_modules)
+# Mas se ainda existir a src/generated, ignore-a:
+src/generated/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
