@@ -20,3 +20,8 @@ model User {
   password  String
   createdAt DateTime @default(now())
 }
+
+model client {
+  id_cliente        Int      @id @default(autoincrement())
+  nome              String?   
+}
